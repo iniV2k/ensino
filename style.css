@@ -4,21 +4,46 @@ body {
     background-color: rgb(43, 36, 36);
     color: white;
     font-family: 'Roboto', serif;
-    border: 1px solid pink;
+    align-items: center;
+    margin: 20px;
 }
 
-a {
-    color: white;
+.inimigo {
+    font-size: 24px;
+    margin: 20px 0;
 }
 
-a:hover {
-    font-size: 20px;
+.progress-container {
+    width: 300px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
 }
 
-h1 {
-    text-align: center;
+.barra-vida-estilo {
+    height: 100%;
+    width: 100px;
+    background-color: #ff4d4d;
+    transition: width 0.3s ease;
 }
 
-nav {
-    text-align: center;
+.stats, .acoes {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #45a049;
 }
