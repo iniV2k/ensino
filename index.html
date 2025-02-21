@@ -8,22 +8,24 @@
 </head>
 <body>
 
-    <div class="inimigo">
-        <strong>Inimigo:</strong> <span id="nomeInimigo"></span><br>
-        <strong>Armadura:</strong> <span id="armaduraInimigo"></span>
-    </div>
-    <div class="progress-container">
-        <div class="barra-vida-estilo" id="barraVida"></div>
-    </div>
-    <div class="stats">
-        <p><strong>Seu ataque:</strong> <span id="atqPlayer">0</span></p>
-        <p><strong>Ouro:</strong> <span id="gold">0</span></p>
-    </div>
-
-    <div class="acoes">
-        <button onclick="atacarInimigo()">Atacar</button>
-        <button onclick="aprimorarAtaque()">Aprimorar ataque</button>
-    </div>
+    <main id="conteudoPrincipal"> 
+        <div class="inimigo">
+            <strong>Inimigo:</strong> <span id="nomeInimigo"></span><br>
+            <strong>Armadura:</strong> <span id="armaduraInimigo"></span>
+        </div>
+        <div class="progress-container">
+            <div class="barra-vida-estilo" id="barraVida"></div>
+        </div>
+        <div class="stats">
+            <p><strong>Poder de ataque:</strong> <span id="atqPlayer">0</span></p>
+            <p><strong>Gold:</strong> <span id="gold">0</span></p>
+        </div>
+    
+        <div class="acoes">
+            <button onclick="atacarInimigo()">Atacar</button>
+            <button onclick="aprimorarAtaque()">Aprimorar ataque (10g)</button>
+        </div>
+    </main>
      
     <script src="script.js"></script>
 </body>

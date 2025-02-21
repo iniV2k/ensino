@@ -8,6 +8,11 @@ body {
     margin: 20px;
 }
 
+#conteudoPrincipal {
+    text-align: center;
+    margin: 20px auto;
+}
+
 .inimigo {
     font-size: 24px;
     margin: 20px 0;
@@ -19,7 +24,7 @@ body {
     border: 2px solid #000;
     border-radius: 5px;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 10px auto;
     position: relative;
 }
 

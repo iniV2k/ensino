@@ -22,8 +22,9 @@ function atacarInimigo() {
     vidaInimigo = Math.max(0, vidaInimigo - damage);
 
     if (vidaInimigo === 0) {
-        goldPlayer += 10;
-        alert(`Você derrotou ${inimigoAtual.nome} e ganhou 10 ouro!`);
+        let goldGanho = (inimigoAtual.nome === "Jureg, the boss") ? 50 : 10;
+        goldPlayer += goldGanho;
+        alert(`Você derrotou ${inimigoAtual.nome} e ganhou ${goldGanho} ouro!`);
         carregarNovoInimigo();
     }
 
@@ -34,10 +35,10 @@ function aprimorarAtaque() {
     if (goldPlayer >= 10) {
         goldPlayer -= 10;
         atqPlayer += 5;
-        alert("Você aprimorou seu ataque em 5");
+        // alert("Você aprimorou seu ataque em 5");
         recarregarJogo();
     } else {
-        alert("Você não tem ouro suficiente!");
+        // alert("Você não tem ouro suficiente!");
     }
 }
 
